@@ -1,0 +1,145 @@
+
+    
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portal comunitário para registrar e acompanhar relatos de falta de energia em Capanema PR.">
+    <title>Capanema Sem Apagão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">⚡ Capanema Sem Apagão</div>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#registrar">Registrar</a>
+            <a href="#ocorrencias">Ocorrências</a>
+            <a href="#seguranca">Segurança</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-content">
+                <span class="tag">INFORMAÇÃO PARA A COMUNIDADE</span>
+
+                <h1>Faltou energia no seu bairro?</h1>
+
+                <p>
+                    Registre a ocorrência e ajude outros moradores
+                    de Capanema a acompanhar os relatos de falta de energia.
+                </p>
+
+                <a href="#registrar" class="btn">Registrar ocorrência</a>
+            </div>
+        </section>
+
+        <section class="container" id="registrar">
+            <h2>Registrar falta de energia</h2>
+
+            <p class="subtitle">
+                Informe os dados para compartilhar seu relato.
+            </p>
+
+            <form id="formOcorrencia">
+
+                <label for="bairro">Bairro:</label>
+                <input
+                    type="text"
+                    id="bairro"
+                    placeholder="Ex: Centro"
+                    required
+                >
+
+                <label for="situacao">Situação:</label>
+                <select id="situacao" required>
+                    <option value="">Selecione</option>
+                    <option value="Sem energia">Estou sem energia</option>
+                    <option value="Energia voltou">A energia voltou</option>
+                </select>
+
+                <label for="tempo">Há quanto tempo está sem energia?</label>
+                <select id="tempo" required>
+                    <option value="">Selecione</option>
+                    <option value="Menos de 1 hora">Menos de 1 hora</option>
+                    <option value="De 1 a 5 horas">De 1 a 5 horas</option>
+                    <option value="De 5 a 12 horas">De 5 a 12 horas</option>
+                    <option value="Mais de 12 horas">Mais de 12 horas</option>
+                </select>
+
+                <button type="submit" class="btn">
+                    Enviar ocorrência
+                </button>
+
+            </form>
+        </section>
+
+        <section class="container" id="ocorrencias">
+            <h2>Relatos dos moradores</h2>
+
+            <p class="subtitle">
+                Confira as ocorrências registradas pela comunidade.
+            </p>
+
+            <div id="listaOcorrencias" class="lista-ocorrencias">
+                <p class="vazio">Nenhuma ocorrência registrada ainda.</p>
+            </div>
+        </section>
+
+        <section class="container seguranca" id="seguranca">
+            <h2>Cuidados durante tempestades</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <span>⚠️</span>
+                    <h3>Fios caídos</h3>
+                    <p>
+                        Nunca toque em fios elétricos caídos.
+                        Mantenha distância e avise a concessionária.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>🔌</span>
+                    <h3>Aparelhos elétricos</h3>
+                    <p>
+                        Retire aparelhos sensíveis da tomada
+                        quando houver risco de oscilação elétrica.
+                    </p>
+                </div>
+
+                <div class="card">
+                    <span>⛈️</span>
+                    <h3>Tempestades</h3>
+                    <p>
+                        Evite áreas abertas e não fique próximo
+                        de postes durante tempestades.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contato">
+            <h2>Precisa informar uma falta de energia?</h2>
+            <p>Entre em contato diretamente com a Copel.</p>
+            <strong>0800 51 00 116</strong>
+            <p class="aviso">
+                Este site é comunitário e não substitui os canais oficiais.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Capanema Sem Apagão</p>
+        <p>Um projeto em benefício da comunidade de Capanema - PR.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

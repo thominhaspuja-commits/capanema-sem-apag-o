@@ -1,0 +1,333 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #1e293b;
+}
+
+/* CABEÇALHO */
+
+header {
+    background-color: #102b4e;
+    color: white;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #ffd43b;
+}
+
+/* INÍCIO */
+
+.hero {
+    min-height: 400px;
+    background: linear-gradient(120deg, #102b4e, #23609a);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: #ffd43b;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 20px 0;
+}
+
+.hero p {
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ffd43b;
+    color: #102b4e;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #f1bd13;
+    transform: translateY(-2px);
+}
+
+/* CONTEÚDO */
+
+.container {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 0 25px;
+}
+
+.container h2 {
+    color: #102b4e;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #64748b;
+    margin-bottom: 25px;
+}
+
+/* FORMULÁRIO */
+
+form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+input, select {
+    padding: 13px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 100%;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #23609a;
+}
+
+form .btn {
+    margin-top: 15px;
+}
+
+/* OCORRÊNCIAS */
+
+.lista-ocorrencias {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ocorrencia {
+    background-color: white;
+    padding: 20px;
+    border-left: 5px solid #eab308;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.ocorrencia h3 {
+    color: #102b4e;
+    margin-bottom: 7px;
+}
+
+.ocorrencia p {
+    color: #64748b;
+    margin-top: 5px;
+}
+
+.ocorrencia.voltou {
+    border-left-color: #16a34a;
+}
+
+.status {
+    font-weight: bold;
+    color: #b45309;
+}
+
+.voltou .status {
+    color: #15803d;
+}
+
+.excluir {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: none;
+    padding: 9px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.vazio {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    color: #64748b;
+}
+
+/* SEGURANÇA */
+
+.cards {
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.card {
+    flex: 1;
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card span {
+    font-size: 30px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #102b4e;
+}
+
+.card p {
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* CONTATO */
+
+.contato {
+    background-color: #102b4e;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.contato h2 {
+    margin-bottom: 12px;
+}
+
+.contato strong {
+    display: block;
+    color: #ffd43b;
+    font-size: 27px;
+    margin: 20px 0;
+}
+
+.aviso {
+    font-size: 12px;
+    color: #cbd5e1;
+}
+
+/* RODAPÉ */
+
+footer {
+    background-color: #091c33;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 50px 25px;
+        min-height: 350px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .container {
+        margin: 40px auto;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .container h2 {
+        font-size: 23px;
+    }
+
+    form {
+        padding: 20px;
+    }
+}
